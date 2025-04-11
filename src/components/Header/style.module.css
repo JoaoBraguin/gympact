@@ -1,0 +1,322 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: 10px 32px;
+    opacity: 100%;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+
+    .menuIcon {
+        display: none;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+
+        @media (max-width:500px) {
+            display: flex;
+        }
+    }
+
+    .SearchIcon {
+        display: none;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+
+        @media (max-width:880px) {
+            display: flex;
+        }
+    }
+
+    .menu {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
+
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:hover {
+                color: rgb(158, 158, 158);
+                text-decoration: underline;
+            }
+
+        }
+
+        @media (max-width:520px) {
+            display: none;
+        }
+    }
+
+
+
+    .busca {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 4px 8px;
+        background-color: #464646;
+        border-radius: 10px;
+        max-width: 400px;
+        width: 100%;
+
+        input {
+            flex: 1;
+            outline: none;
+            background: transparent;
+            border: 0;
+            font-size: 16px;
+            color: rgba(239, 218, 218, 0.575);
+
+        }
+
+        &:focus-within {
+            outline: solid gray 2px;
+        }
+
+        @media (max-width:880px) {
+            display: none;
+        }
+    }
+
+    .gympact {
+        width: 100px;
+    }
+
+
+
+}
+
+.overlayMenuLateral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: flex-start;
+    z-index: 5;
+
+
+}
+
+.menuLateral {
+    background-color: black;
+    width: 250px;
+    overflow-y: scroll;
+    max-width: 80%;
+    height: 100%;
+    padding: 20px;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    button {
+        background: none;
+        cursor: pointer;
+        border: 0;
+        color: white;
+
+    }
+}
+
+.navMenuLateral {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-top: 24px;
+    align-items: center;
+
+    button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-size: 19px;
+        padding: 10px;
+        gap: 15px;
+        background: none;
+        border: 0;
+
+        &:hover {
+            background-color: #272727;
+            border-radius: 10px;
+            text-decoration: underline;
+        }
+
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: white;
+        font-size: 19px;
+        padding: 10px;
+        gap: 15px;
+
+        &:hover {
+            background-color: #272727;
+            border-radius: 10px;
+            text-decoration: underline;
+        }
+    }
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.overlayPesquisar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.pesquisaContainer {
+    background: white;
+    padding: 16px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.pesquisaInput {
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 16px;
+
+}
+
+.buttonlog {
+    color: white;
+    background: none;
+    padding: 10px;
+    border: 0;
+    font-size: 15px;
+    gap: 20px;
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+
+    }
+}
+
+.overlayLogin {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+
+
+
+
+}
+
+.LoginContainer {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 60px;
+    border-radius: 14px;
+    background-color: black;
+    z-index: 10;
+
+    button {
+        display: flex;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 10px;
+        background: none;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        font-weight: 300;
+        font-family: "Montserrat", sans-serif;
+
+
+
+    }
+
+    a {
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        padding: 12px;
+
+        &:hover {
+            text-decoration: underline;
+
+        }
+    }
+}
+
+.loginInput {
+    width: 300px;
+    padding: 10px;
+
+    gap: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    background: none;
+    background-color: #272525;
+    color: white;
+
+    &::placeholder {
+        color: white;
+    }
+
+
+}
+
+.gympact1 {
+    width: 100px;
+    display: flex;
+    justify-content: left;
+}

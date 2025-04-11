@@ -1,0 +1,35 @@
+.containerHero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+    color: white;
+
+    video {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+    }
+
+}
+
+.frase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    
+    h1{
+        font-weight: 300;
+  
+        
+    }
+}
