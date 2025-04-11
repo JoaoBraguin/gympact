@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     padding: 10px 32px;
     opacity: 100%;
     position: fixed;
@@ -41,11 +41,18 @@ header {
             color: white;
             text-decoration: none;
 
-            &:hover {
-                color: rgb(158, 158, 158);
-                text-decoration: underline;
+            &::after {
+                content: '';
+                background-color: white;
+                display: block;
+                height: 2px;
+                width: 0;
+                transition: ease-in-out 0.5s;
             }
 
+            &:hover::after {
+                width: 100%;
+            }
         }
 
         @media (max-width:520px) {
