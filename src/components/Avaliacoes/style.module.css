@@ -1,0 +1,95 @@
+.postsContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.postCard {
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: visible;
+    padding: 20px;
+    height: 120px;
+    background-color: #2a2a2a;
+    color: white;
+    margin-bottom: 80px; /* novo: evita que sobreponha o próximo card */
+    padding-top: 20px; /* novo: cria espaço interno pro usuário flutuante */
+    width: 90%;
+
+}
+
+
+.usuario {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: max-content;
+    h3{
+        font-weight: 300;
+    }
+}
+
+.usuario img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.usuario h3 {
+    margin: 4px 0 0;
+    font-size: 16px;
+    color: white;
+}
+
+.usuario span {
+    font-size: 14px;
+    color: #ccc;
+    font-weight: 700;
+}
+
+.avaliacao {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+    color: gold;
+}
+.botao {
+    display: flex;
+    align-self: flex-start;
+    margin: 20px;
+    font-style: italic;
+    background: none; 
+    border: none;
+    color: white;
+    cursor: pointer;      
+    padding: 0;      
+    font-size: 1rem;
+  }
+  
+  .botao:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+  }
+
+  .destaques{
+    
+    h2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 300;
+        margin: 20px;
+        font-size: 32px;
+        font-family: "Marcellus SC", serif;
+    }
+  }
