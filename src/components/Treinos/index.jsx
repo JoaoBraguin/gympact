@@ -9,7 +9,7 @@ export default function Treinos() {
     <section className={style.destaques}>
       <h2>Treinos Personalizdos</h2>
       <div className={style.postsContainer}>
-        <article className={style.postCard}>
+        <a href='/treinos-superiores' className={style.postCard}>
           <div className={style.postContent}>
             <h1 className={style.title}>Superiores</h1>
             <div className={style.imagecontainer}>
@@ -19,8 +19,8 @@ export default function Treinos() {
             <button className={style.readMore}>Acessar Mais</button>
             </div>
           </div>
-        </article>
-        <article className={style.postCard}>
+        </a>
+        <a  href='/treinos-inferiores' className={style.postCard}>
           <div className={style.postContent}>
             <h1 className={style.title}>Inferiores</h1>
             <div className={style.imagecontainer}>
@@ -30,7 +30,7 @@ export default function Treinos() {
             <button className={style.readMore}>Acessar Mais</button>
             </div>
           </div>
-        </article>
+        </a>
       </div>
     </section>
   );

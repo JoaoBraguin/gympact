@@ -1,0 +1,101 @@
+.padding {
+    padding-top: 90;
+}
+
+.destaque {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        color: #ffffff;
+        font-family: "Marcellus SC", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 65px;
+    }
+}
+
+.banner1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    img {
+        width: 800px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    h1 {
+        color: white;
+        position: absolute;
+        z-index: 3;
+        margin-top: 100px;
+        font-family: "Marcellus SC", serif;
+        font-weight: 200;
+        font-style: normal;
+    }
+}
+
+.titulo1 {
+    color: gray;
+    font-family: "Marcellus SC", serif;
+    font-weight: 200;
+    font-size: 30px;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.Quadriceps {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr ;
+}
+
+
+
+.linha {
+    height: 2px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    background-color: white;
+}
+
+.Posterior {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.Gluteo {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr 1fr ;
+
+}
+
+.Panturrilha {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: 1fr 1fr;
+}
+.seven {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
