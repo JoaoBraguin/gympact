@@ -33,7 +33,7 @@ export default function Avaliacoes() {
                         No geral, é uma excelente plataforma para quem busca treinos focados e eficientes.”
                     </p>
                 </article>
-                <button className={style.botao}>Ver mais</button>
+                <a className={style.botao} href='/Testemunhos'>Ver Mais</a>
             </div>
         </section>
     );

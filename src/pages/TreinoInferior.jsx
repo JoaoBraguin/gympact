@@ -35,31 +35,30 @@ export default function TreinoInferior() {
             </div>
             <h2 className={style.titulo1}>Quadriceps</h2>
             <section className={style.Quadriceps}>
-                <Exercicioinf titulo="Leg Press" imagem={Quadriceps1} />
-                <Exercicioinf titulo="Cadeira Extensora" imagem={Quadriceps2} />
+                <Exercicioinf titulo="Leg Press" inteira imagem={Quadriceps1} />
+                <Exercicioinf titulo="Cadeira Extensora" inteira imagem={Quadriceps2} />
                 <Exercicioinf titulo="Agachamento Sumô" imagem={Quadriceps3} />
                 <Exercicioinf titulo="Agachamento" imagem={Quadriceps4} />
             </section>
             <hr className={style.linha}></hr>
             <h2 className={style.titulo1}>Posterior de coxa</h2>
             <section className={style.Posterior}>
-                <Exercicioinf titulo="Leg Press" imagem={Quadriceps1} />
-                <Exercicioinf titulo="Mesa Flexora" imagem={Posteriordecoxa2} />
+                <Exercicioinf titulo="Leg Press" inteira imagem={Quadriceps1} />
+                <Exercicioinf titulo="Mesa Flexora" inteira imagem={Posteriordecoxa2} />
                 <Exercicioinf titulo="Agachamento" imagem={Quadriceps4} />
                 <Exercicioinf titulo="Stiff" imagem={Posteriordecoxa4} />
-                <Exercicioinf titulo="Cadeira Flexora" imagem={Posteriordecoxa5} />
+                <Exercicioinf titulo="Cadeira Flexora" inteira imagem={Posteriordecoxa5} />
                 <Exercicioinf titulo="Levantamento terra" imagem={Posteriordecoxa6} />
             </section>
             <hr className={style.linha}></hr>
             <h2 className={style.titulo1}>Gluteo</h2>
             <section className={style.Gluteo}>
-                <Exercicioinf titulo="Leg Press" imagem={Quadriceps1} />
+                <Exercicioinf titulo="Leg Press" inteira imagem={Quadriceps1} />
                 <Exercicioinf titulo="Afundo" imagem={Gluteo1} />
                 <Exercicioinf titulo="Agachamento" imagem={Gluteo2} />
                 <Exercicioinf titulo="Elevação Pelvica" imagem={Gluteo3} />
-                <Exercicioinf titulo="Cadeira Adutora" imagem={Gluteo4} />
+                <Exercicioinf titulo="Cadeira Adutora" inteira imagem={Gluteo4} />
                 <Exercicioinf titulo="Levantamento terra" imagem={Gluteo5} />
-
             </section>
             <div className={style.seven}>
                 <Exercicioinf titulo="Extensão De Quaril com coice" imagem={Gluteo6} />
@@ -68,7 +67,7 @@ export default function TreinoInferior() {
             <h2 className={style.titulo1}>Panturrilha</h2>
             <section className={style.Panturrilha}>
                 <Exercicioinf titulo="Panturiilha Sentado" imagem={Panturrilha1} />
-                <Exercicioinf titulo="Panturiilha em Pé" imagem={Panturrilha2} />
+                <Exercicioinf titulo="Panturiilha em Pé" inteira imagem={Panturrilha2} />
             </section>
             <Footer />
         </>

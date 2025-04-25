@@ -61,7 +61,7 @@
 .Quadriceps {
     display: grid;
     gap: 12px;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr;
 }
 
 
@@ -84,7 +84,7 @@
 .Gluteo {
     display: grid;
     gap: 12px;
-    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
 
 }
 
@@ -93,9 +93,42 @@
     gap: 12px;
     grid-template-columns: 1fr 1fr;
 }
+
 .seven {
     display: flex;
     align-items: center;
     justify-content: center;
+
+}
+
+.item {
+    position: relative;
+    overflow: hidden;
+
+    a {
+        color: white;
+        font-size: 23px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 1s;
+        opacity: 0;
+    }
+
+    &:hover a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        top: 60%;
+        text-decoration: none;
+
+
+    }
+
+    /* &:hover img{
     
+        
+    } */
 }

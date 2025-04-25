@@ -22,3 +22,41 @@
         height: 175px;
     }
 }
+
+.item {
+    position: relative;
+    overflow: hidden;
+
+    a {
+        color: white;
+        font-size: 23px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 1s;
+        opacity: 0;
+    }
+
+    /* &:hover {
+        transform: scale(1.05);
+        
+
+    } */
+
+    &:hover a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        top: 60%;
+        text-decoration: none;
+        
+        
+    }
+    /* &:hover img{
+     
+        
+       
+    } */
+}
