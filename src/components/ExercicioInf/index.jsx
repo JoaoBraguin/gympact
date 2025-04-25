@@ -1,17 +1,28 @@
-import { FaStar } from 'react-icons/fa'
-import { FaRegStar } from "react-icons/fa";
-import style from './style.module.css'
+import { FaStar } from 'react-icons/fa';
+import { FaRegStar } from 'react-icons/fa';
+import style from './style.module.css';
 
 export default function Exercicioinf({ titulo, imagem, descricao, inteira }) {
     return (
         <div className={style.item}>
-            <a href="">Ver Mais</a>
+            <a href="/Detalhes">Ver mais</a>
             <div className={style.exercicioinf}>
                 <div>
-                    <h3>{titulo} {inteira ? (<FaStar color="yellow" size={20} />) : <FaRegStar color="yellow" size={20} />}</h3>
+                    <h3>
+                        {titulo}{' '}
+                        {inteira ? (
+                            <FaStar color="yellow" size={20} />
+                        ) : (
+                            <FaRegStar color="yellow" size={20} />
+                        )}
+                    </h3>
                 </div>
-                <img src={imagem} alt="" />
+
+                <div className={style.imgWrapper}>
+                    <img src={imagem} alt={descricao || "Imagem do exercício"} />
+                    <div className={style.overlay}></div>
+                </div>
             </div>
         </div>
-    )
+    );
 }

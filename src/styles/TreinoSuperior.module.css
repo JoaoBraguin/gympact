@@ -60,7 +60,8 @@
 
 .peito {
     display: grid;
-    gap: 12px;
+    gap: 0 185px;
+    padding: 20px 100px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -77,37 +78,43 @@
 
 .costa {
     display: grid;
-    gap: 12px;
+    gap: 0 185px;
+    padding: 20px 100px;;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 .Ombro {
     display: grid;
-    gap: 12px;
+    gap: 0 185px;
+    padding: 20px 350px;
     grid-template-columns: 1fr 1fr;
 }
 
 .Biceps {
     display: grid;
-    gap: 12px;
+    gap: 0 185px;
+    padding: 20px 350px;
     grid-template-columns: 1fr 1fr;
 }
 
 .Triceps {
     display: grid;
-    gap: 12px;
+    gap: 0 185px;
+    padding: 20px 335px;
     grid-template-columns: 1fr 1fr;
 }
 
 .Ante {
     display: grid;
-    gap: 12px;
+    gap: 0 185px;
+    padding: 20px 330px;
     grid-template-columns: 1fr 1fr;
 }
 
 .Trapezio {
     display: grid;
-    gap: 12px;
+    gap: 0 185px;
+    padding: 20px 560px;
     grid-template-columns: 1fr;
 }
 

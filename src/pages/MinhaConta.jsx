@@ -86,10 +86,14 @@ export default function MinhaConta() {
                     </div>
                 </div>
             </div>
-            <div className={style.button}>
+            <div className={style.containerbutton}>
+                <div className={style.button}>
                     <button>Salvar</button>
                 </div>
-                <Footer />
+                <div className={style.button}>
+                    <a href="/">Sair</a>
+                </div>
+            </div>
         </>
     )
 }

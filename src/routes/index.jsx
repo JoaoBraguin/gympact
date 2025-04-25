@@ -7,6 +7,7 @@ import MinhaConta from "../pages/MinhaConta";
 import TreinoSuperior from "../pages/TreinoSuperior";
 import TreinoInferior from "../pages/TreinoInferior";
 import Testemhunhos from "../pages/Testemunhos";
+import Detalhes from "../pages/Detalhes";
 
 
 export default function RouteApp() {
@@ -21,6 +22,7 @@ export default function RouteApp() {
                 <Route path="/treinos-superiores" element={<TreinoSuperior />} />
                 <Route path="/treinos-inferiores" element={<TreinoInferior/>} />
                 <Route path="/Testemunhos" element={<Testemhunhos/>} />
+                <Route path="/Detalhes" element={<Detalhes/>} />
             </Routes>
         </BrowserRouter>
     )   

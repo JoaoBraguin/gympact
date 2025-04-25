@@ -1,0 +1,137 @@
+.back {
+    background-color: black;
+}
+
+.inicio {
+    text-align: center;
+    padding: 30px;
+}
+
+.inicio h1 {
+    color: white;
+    font-family: "Marcellus SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.trabalhar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.trabalhar h1,
+h2,
+p {
+    color: white;
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.trabalhar h1 {
+    font-size: 40px;
+}
+
+.trabalhar h2 {
+    font-size: 30px;
+}
+
+.trabalhar p {
+    font-size: 20px;
+}
+
+.trabalhar img {
+
+    width: 600px;
+
+}
+
+.textos {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    background-color: #1A1A1A;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+
+.execucao {
+    width: 80%;
+    height: 50px;
+}
+
+.execucao h1 {
+    color: white;
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+
+.atencao h1 {
+    color: white;
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.series {
+    padding-top: 15px;
+}
+
+.series h1 {
+    color: white;
+    font-family: "Markazi Text", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.filho {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    background-color: #1A1A1A;
+    margin-left: 150px;
+    border-radius: 20px;
+}
+
+.pai {
+    display: flex;
+    padding-left: 55px;
+    padding-top: 40px;
+}
+
+.part {
+    padding-top: 45px;
+}
+
+.sup {
+    img {
+        width: 280px;
+        height: 280px
+    }
+}
+
+.sup {
+    padding-right: 90px;
+}
+
+.escr {
+    display: flex;
+    align-items: left;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-left: 100px;
+    background-color: #1A1A1A;
+    border-radius: 20px;
+    padding: 41px;
+
+}

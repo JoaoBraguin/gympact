@@ -1,15 +1,25 @@
 import { FaBars, FaSearch, FaTimes } from 'react-icons/fa'
 import style from './style.module.css'
 import gympactsemfundo from '../../images/gympactsemfundo.png'
-
-import { useState } from 'react'
-import { FaUserCircle } from "react-icons/fa";
+import { useState, useEffect } from 'react'
 import { IoInformationCircle } from "react-icons/io5";
-import { FaShoppingCart } from "react-icons/fa";
 export default function Header() {
     const [menuLateral, setmenuLateral] = useState(false);
     const [pesquisar, setPesquisar] = useState(false);
     const [login, setLogin] = useState(false);
+
+    useEffect(() => {
+        if (login) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [login]);
+
 
     return (
         <>
@@ -52,7 +62,7 @@ export default function Header() {
                             <a href="">Sobre Nós</a>
                             <a href="">Favoritos</a>
                             <a href="">Home</a>
-                           
+
 
                         </nav>
                         <div className={style.linha}>
