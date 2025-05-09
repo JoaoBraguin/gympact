@@ -4,78 +4,84 @@
     align-items: center;
     flex-direction: column;
     margin: 16px 0;
+    h3 {
+        color: white;
+        font-weight: 100;
+        font-size: 22px;
+        padding: 10px;
+
+        faStar {
+            height: 5px;
+            width: 5px;
+        }
+    }
 }
 
-.exercicio h3 {
-    color: white;
-    font-weight: 100;
-    font-size: 30px;
-    padding: 10px;
-}
 
-/* Container da imagem + overlay */
+
+
 .imgWrapper {
     position: relative;
     width: 100%;
     height: 175px;
     border-radius: 20px;
     overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(17, 16, 16, 0.512);
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
+        border-radius: 20px;
+    }
 }
 
-/* Imagem com efeito suave */
-.imgWrapper img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-    transition: transform 0.5s ease-in-out;
-}
-
-/* Overlay invisível inicialmente */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(17, 16, 16, 0.512); /* fundo escuro semitransparente */
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-    border-radius: 20px;
-}
-
-/* Container principal do item */
 .item {
     position: relative;
     overflow: hidden;
+
+    a {
+        color: white;
+        font-size: 23px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 1s;
+        opacity: 0;
+        text-decoration: none;
+    }
+
+    &:hover a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        top: 60%;
+        z-index: 5;
+    }
+
+    &:hover .overlay {
+        opacity: 1;
+    }
+
+    /* Zoom opcional na imagem */
+     &:hover img {
+         transform: scale(1.05);
+ }
 }
 
-/* Estilização do link "Ver mais" */
-.item a {
-    color: white;
-    font-size: 23px;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 1s;
-    opacity: 0;
-    text-decoration: none;
-}
 
-.item:hover a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 1;
-    top: 60%;
-    z-index: 5;
-}
 
-.item:hover .overlay {
-    opacity: 1;
-}
-/* 
-.item:hover img {
-    transform: scale(1.05);
-} */

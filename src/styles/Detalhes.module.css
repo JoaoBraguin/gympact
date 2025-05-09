@@ -1,5 +1,7 @@
 .back {
     background-color: black;
+    padding: 48px 0;
+   
 }
 
 .inicio {
@@ -9,9 +11,9 @@
 
 .inicio h1 {
     color: white;
-    font-family: "Marcellus SC", serif;
-    font-weight: 400;
-    font-style: normal;
+    font-style: italic;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
     font-size: 40px;
 }
 
@@ -22,26 +24,27 @@
 
 }
 
-.trabalhar h1,
-h2,
-p {
-    color: white;
-    font-family: "Markazi Text", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-}
+
 
 .trabalhar h1 {
     font-size: 40px;
+    font-style: italic;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
 }
 
 .trabalhar h2 {
     font-size: 30px;
+    font-style: italic;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
 }
 
 .trabalhar p {
     font-size: 20px;
+    font-style: italic;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
 }
 
 .trabalhar img {
@@ -51,47 +54,13 @@ p {
 }
 
 .textos {
-    justify-content: space-between;
     display: flex;
-    flex-direction: row;
     background-color: #1A1A1A;
     border-radius: 20px;
     padding-left: 20px;
-}
-
-
-.execucao {
-    width: 80%;
-    height: 50px;
-}
-
-.execucao h1 {
-    color: white;
-    font-family: "Markazi Text", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-}
-
-
-.atencao h1 {
-    color: white;
-    font-family: "Markazi Text", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-}
-
-.series {
-    padding-top: 15px;
-}
-
-.series h1 {
-    color: white;
-    font-family: "Markazi Text", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
+    padding: 20px;
+    gap: 40px;
+    margin: 12px;
 }
 
 .filho {
@@ -101,7 +70,81 @@ p {
     background-color: #1A1A1A;
     margin-left: 150px;
     border-radius: 20px;
+    margin: 12px;
 }
+
+.trabalhar h1,
+h2,
+p {
+    color: white;
+    font-style: italic;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    gap: 80px;
+    margin: 12px;
+
+}
+
+.part {
+    padding-top: 45px;
+    h2{
+        margin: 19px;
+        font-size: 24px;
+    }
+}
+
+.execucao {
+    width: 80%;
+    height: 50px;
+    h2{
+        margin: 19px;
+        font-size: 26px;
+    }
+
+
+}
+
+
+
+.execucao h1 {
+    color: white;
+    font-style: italic;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    
+
+}
+
+
+.atencao {
+    width: 415px;
+    h2{
+        font-size: 25px;
+    }
+}
+
+.atencao h1 {
+    color: white;
+    font-style: italic;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+
+    font-weight: weight;
+
+}
+
+.series {
+    padding-top: 15px;
+}
+
+.series h1 {
+    color: white;
+    font-style: italic;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+}
+
+
 
 .pai {
     display: flex;
@@ -109,12 +152,13 @@ p {
     padding-top: 40px;
 }
 
-.part {
-    padding-top: 45px;
-}
+
 
 .sup {
+    display: flex;
+    margin-top: 60px;
     img {
+        
         width: 280px;
         height: 280px
     }

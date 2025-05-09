@@ -13,7 +13,7 @@ export default function Testemhunhos() {
 
             <Header />
             <div className={style.inicio}>
-                <h1>Testemhunhos </h1>
+                <h1>Testemunhos </h1>
             </div>
             <section className={style.testemunhos}>
                 <div className={style.equipe}>

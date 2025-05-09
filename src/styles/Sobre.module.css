@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+
 }
 
 .sobre h1 {
@@ -36,19 +36,51 @@
     flex-wrap: wrap;
     padding: 10px;
     width: 100%;
-  
+
     font-style: italic;
+
+    @media (max-width:800px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
 
 }
 
-.equipe img {
+.equipeesq {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 100%;
+
+    font-style: italic;
+
+    @media (max-width:800px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+
+    }
+}
+
+
+
+.equipe img,
+.equipeesq img {
     height: 350px;
+    width: 400px;
+    object-fit: cover;
     padding-left: 50px;
 }
 
-.equipe h1 {
+.equipe h1,
+.equipeesq h2 {
     color: #B0B0B0;
-    font-family: "Marcellus SC", serif;
+   
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
@@ -59,7 +91,7 @@
     color: white;
     font-weight: 200;
     font-style: italic;
-    font-family: "Inter", sans-serif;
+   
     font-optical-sizing: auto;
     font-style: normal;
 }
@@ -69,24 +101,42 @@
     flex-direction: column;
     flex: 1;
     background-color: #1A1A1A;
+    width: 408px;
     height: 220px;
     border-radius: 30px;
     padding: 60px;
     font-style: italic;
 
-    h2 {
-        margin: 2px;
+    @media (max-width:850px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
+
+
 
     @media (max-width:500px) {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
+    h2 {
+        margin: 2px;
+    }
 }
 
 .info h1 {
     padding-left: 100px;
+    color: #B0B0B0;
+    font-weight: 100;
+    font-size: 40px;
+
+
+    @media (max-width:850px) {
+        font-size: 30px;
+    }
 
 
 }
@@ -95,6 +145,34 @@
     padding-left: 100px;
     font-style: italic;
     font-weight: 300;
+    color: white;
+    font-size: 20px;
+
+    @media (max-width:850px) {
+        font-size: 20px;
+    }
+}
+
+.infoesq h1 {
+    padding-left: 100px;
+    color: #B0B0B0;
+    font-weight: 100;
+    font-size: 40px;
+    @media (max-width:850px) {
+        font-size: 30px;
+    }
+}
+
+.infoesq h2 {
+    padding-left: 100px;
+    font-style: italic;
+    font-weight: 300;
+    color: white;
+    font-size: 20px;
+
+    @media (max-width:850px) {
+        font-size: 20px;
+    }
 }
 
 .infoesq {
@@ -108,6 +186,19 @@
 
     border-radius: 30px;
     padding: 60px;
+
+
+    @media (max-width:850px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media (max-width:500px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     h2 {
         margin: 2px;

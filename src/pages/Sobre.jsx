@@ -1,6 +1,5 @@
 import style from '../styles/Sobre.module.css'
 import imagem from '../images/127Perfil.png'
-import imagemlogo from '../images/gympact logo.png'
 import imagemlogoj from '../images/joaoperfil.png'
 import imagemlogor from '../images/guiperfil.png'
 import imagemlogoz from '../images/zaneliperfil.png'
@@ -19,7 +18,7 @@ export default function Sobre() {
             </div>
             <section className={style.testemunhos}>
                 <div className={style.equipe}>
-                    <img src={imagemlogoj} alt="" />
+                    <img src={imagem} alt="" />
                     <div className={style.info}>
                         <h1>Joao Pedro </h1>
                         <h2>Desenvolvedor</h2>
@@ -28,13 +27,13 @@ export default function Sobre() {
                 </div>
 
 
-                <div className={style.equipe}>
+                <div className={style.equipeesq}>
                     <div className={style.infoesq}>
                         <h1>Guilherme Reis </h1>
                         <h2>Desenvolvedor</h2>
                         <h2>Designer</h2>
                     </div>
-                    <img src={imagemlogor} alt="" />
+                    <img src={imagem} alt="" />
                 </div>
 
                 <div className={style.equipe}>
@@ -45,13 +44,13 @@ export default function Sobre() {
                         <h2>Designer</h2>
                     </div>
                 </div>
-                <div className={style.equipe}>
+                <div className={style.equipeesq}>
                     <div className={style.infoesq}>
                         <h1> Gabriel Zanelli </h1>
-                        <h2></h2>
+                        <h2>Desenvolvedor</h2>
                         <h2>Designer</h2>
                     </div>
-                    <img src={imagemlogoz} alt="" />
+                    <img src={imagem} alt="" />
                 </div>
 
             </section>

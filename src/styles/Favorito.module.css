@@ -38,6 +38,13 @@
     gap: 0 185px;
     padding: 20px 100px;
     grid-template-columns: 1fr 1fr 1fr;
+    @media (max-width:1162px){
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width:776px){
+        grid-template-columns: 1fr;
+        
+    }
 }
 
 .linha {
@@ -53,48 +60,87 @@
     gap: 0 185px;
     padding: 20px 300px;
     grid-template-columns: 1fr 1fr ;
+       @media (max-width:776px){
+        grid-template-columns: 1fr;
+        
+    }
 }
 .Ombro {
     display: grid;
     gap: 0 185px;
     padding: 20px 100px;
     grid-template-columns: 1fr 1fr 1fr;
+      @media (max-width:1162px){
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width:776px){
+        grid-template-columns: 1fr;
+        
+    }
 }
 .Biceps {
     display: grid;
     gap: 0 185px;
     padding: 20px 350px;
     grid-template-columns: 1fr 1fr;
+      @media (max-width:776px){
+        grid-template-columns: 1fr;
+        
+    }
 }
 .Triceps {
     display: grid;
     gap: 0 185px;
     padding: 20px 350px;
     grid-template-columns: 1fr 1fr;
+      @media (max-width:776px){
+        grid-template-columns: 1fr;
+        
+    }
 }
 .Ante {
     display: grid;
     gap: 0 185px;
     padding: 20px 300px;
     grid-template-columns: 1fr 1fr;
+      @media (max-width:776px){
+        grid-template-columns: 1fr;
+        
+    }
 }
 .Quadriceps {
     display: grid;
     gap: 0 185px;
     padding: 20px 300px;
     grid-template-columns: 1fr 1fr ;
+      @media (max-width:776px){
+        grid-template-columns: 1fr;
+        
+    }
 }
 .Posterior {
     display: grid;
     gap: 0 185px;
     padding: 20px 100px;
     grid-template-columns: 1fr 1fr 1fr;
+         @media (max-width:1162px){
+        grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width:776px){
+        grid-template-columns: 1fr;
+        
+    }
+
 }
 .Gluteo {
     display: grid;
     gap: 0 185px;
     padding: 20px 300px;
     grid-template-columns: 1fr 1fr  ;
+     @media (max-width:776px){
+        grid-template-columns: 1fr;
+        
+    }
 
 }
 .Panturrilha {

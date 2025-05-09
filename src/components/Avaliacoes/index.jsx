@@ -7,7 +7,7 @@ export default function Avaliacoes() {
     return (
         <section className={style.destaques}>
             <h2>Avaliações</h2>
-            <div className={style.postsContainer}>
+            <div className={style.avaliacoesContainer}>
                 <article className={style.postCard}>
 
                     {/* Bloco do usuário flutuante por cima */}

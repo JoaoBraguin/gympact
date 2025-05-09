@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from '../pages/Home'
 import Sobre from '../pages/Sobre'
-import Cadastro from '../pages/Cadastro'
+import Login from '../pages/Login'
 import Favorito from '../pages/Favorito'
 import MinhaConta from "../pages/MinhaConta";
 import TreinoSuperior from "../pages/TreinoSuperior";
@@ -16,14 +16,14 @@ export default function RouteApp() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/Sobre" element={<Sobre />} />
-                <Route path="/Cadastro" element={<Cadastro />} />
                 <Route path="/Favorito" element={<Favorito />} />
                 <Route path="/MinhaConta" element={<MinhaConta />} />
                 <Route path="/treinos-superiores" element={<TreinoSuperior />} />
-                <Route path="/treinos-inferiores" element={<TreinoInferior/>} />
-                <Route path="/Testemunhos" element={<Testemhunhos/>} />
-                <Route path="/Detalhes" element={<Detalhes/>} />
+                <Route path="/treinos-inferiores" element={<TreinoInferior />} />
+                <Route path="/Testemunhos" element={<Testemhunhos />} />
+                <Route path="/detalhes/:id" element={<Detalhes />} />
+                <Route path="/login" element={<Login />} />
             </Routes>
         </BrowserRouter>
-    )   
+    )
 }

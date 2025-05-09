@@ -38,13 +38,11 @@ export default function Header() {
                     <a href="/sobre">Sobre</a>
                     <a href="/minhaconta"> Minha Conta</a>
                     <a href="/Testemunhos"> Testemunhos</a>
-                    <button className={style.buttonlog} onClick={() => setLogin(true)}>Login</button>
+                    <a href="/login"> Login</a>
+                    
 
 
                 </nav>
-                <button onClick={() => setPesquisar(true)} className={style.SearchIcon}>
-                    <FaSearch size={20} color='white' />
-                </button>
             </header>
             {menuLateral && (
                 <div onClick={() => setmenuLateral(false)} className={style.overlayMenuLateral}>
@@ -56,12 +54,12 @@ export default function Header() {
                             </button>
                         </div>
                         <nav className={style.navMenuLateral}>
-                            <a href="">Superiores</a>
-                            <a href="">Inferiores</a>
-                            <a href="">Testemunhos</a>
-                            <a href="">Sobre Nós</a>
-                            <a href="">Favoritos</a>
-                            <a href="">Home</a>
+                            <a href="/treinos-superiores">Superiores</a>
+                            <a href="/treinos-inferiores">Inferiores</a>
+                            <a href="/Testemunhos">Testemunhos</a>
+                            <a href="/Sobre">Sobre Nós</a>
+                            <a href="/Favorito">Favoritos</a>
+                            <a href="/">Home</a>
 
 
                         </nav>
@@ -97,7 +95,6 @@ export default function Header() {
                         <button>Login</button>
                         <a href="">Esqueceu sua Senha?</a>
                     </div>
-
                 </div>
             )}
         </>

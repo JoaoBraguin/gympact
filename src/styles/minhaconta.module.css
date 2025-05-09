@@ -1,12 +1,13 @@
 h1 {
     margin: 5px;
+    font-weight: 200;
 }
 
 .info {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    min-width: 1200px;
     margin: 0 auto;
 
     img {
@@ -18,31 +19,27 @@ h1 {
 
 .info2 {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    gap: 80px;
     justify-content: center;
     align-items: center;
-    flex: 1;
     color: white;
-    gap: 80px;
 
     h1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        align-items: left;
         font-size: 24px;
         font-weight: 200;
     }
 
     p {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         font-weight: 200;
         background-color: #272525;
         width: 280px;
         border-radius: 25px;
         height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
 
@@ -53,102 +50,60 @@ h1 {
     color: white;
     width: 90%;
     margin: 0 auto;
-
 }
 
 .dados {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
     margin: 100px;
     gap: 50px;
     color: white;
-
-    h1 {
-        font-weight: 200;
-    }
-
-    p {
-        font-weight: 200;
-    }
 }
 
-
-
-.esq {
-    display: flex;
-
-    h1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    p {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #272525;
-        width: 150px;
-        border-radius: 25px;
-        height: 50px;
-    }
-}
-
+.esq,
 .dir {
     display: flex;
-
-
-    h1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-
-    }
-
-    p {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #272525;
-        width: 150px;
-        border-radius: 25px;
-        height: 50px;
-
-    }
+    flex-direction: column;
+    gap: 30px;
 }
 
 .a1 {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    align-items: center;
     margin: 20px;
+    gap: 12px;
     color: white;
 
     h1 {
         font-size: 27px;
         font-weight: 200;
+        text-align: center;
     }
 
     p {
         font-weight: 200;
+        text-align: center;
+        background-color: #272525;
+        width: 150px;
+        border-radius: 25px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 
 .textos {
     display: flex;
-    padding: 10px;
+    align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
-
-
+    
+    justify-content: center;
 }
-
-
 
 .linha2 {
     width: 2px;
@@ -175,14 +130,13 @@ h1 {
     align-items: center;
     justify-content: center;
     background-color: #272525;
-    width: 180px;
+    margin-top: 10px;
     border-radius: 25px;
     height: 30px;
 
     p {
         font-size: 25px;
     }
-
 }
 
 .button {
@@ -191,7 +145,7 @@ h1 {
     justify-content: center;
 
     button {
-        background-color: #B81212;
+        background-color: #b81212;
         color: white;
         font-weight: 500;
         padding: 10px;
@@ -199,7 +153,7 @@ h1 {
         width: 80px;
         font-size: 17px;
         margin: 20px;
-
+        cursor: pointer;
     }
 
     a {
@@ -215,11 +169,55 @@ h1 {
         height: 42px;
     }
 }
+@media (max-width: 620px) {
+    .dados {
+        flex-wrap: wrap;
+    }
+}
 
-.containerbutton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+@media (max-width: 500px) {
+    .info {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .info2 {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .info2 p {
+        width: 80%;
+    }
+
+    .info2 h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dados {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        gap: 30px;
+    }
+
+    .esq,
+    .dir {
+        width: 100%;
+        align-items: center;
+    }
+
+    .textos {
+        flex-direction: column;
+        width: 300px;
+        gap: 10px;
+    }
 
 }
