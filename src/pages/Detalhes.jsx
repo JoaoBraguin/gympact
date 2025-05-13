@@ -33,9 +33,9 @@ export default function Detalhes() {
                             <h1>✅ Execução Passo a Passo</h1>
                             {exercicio.passoAPasso.map(passo => (
                                 <div key={passo.id}>
-                                    <h2>{passo.id}. {passo.titulo}</h2>
-                                    <p>. {passo.descricao1}</p>
-                                    {passo.descricao2 && <p>. {passo.descricao2}</p>}
+                                    <h2>{passo.id}- {passo.titulo}</h2>
+                                    <p>- {passo.descricao1}</p>
+                                    {passo.descricao2 && <p>- {passo.descricao2}</p>}
                                 </div>
                             ))}
                         </div>
@@ -48,18 +48,18 @@ export default function Detalhes() {
                     <div className={style.filho}>
                         <div className={style.atencao}>
                             <h1>⚠️ Prestar atenção!</h1>
-                            <h2>. Erros Comuns a Evitar</h2>
+                            <h2> Erros Comuns a Evitar</h2>
                             {exercicio.erros.map(erro => (
-                                <p key={erro.id}>. {erro.descricao}</p>
+                                <p key={erro.id}>- {erro.descricao}</p>
                             ))}
                         </div>
 
                         <div className={style.series}>
                             <h1>🔁 Séries e Repetições sugeridas</h1>
                             <h2>Hipertrofia:</h2>
-                            <p>. {exercicio.series[0].titulo} de {exercicio.series[0].descricao}</p>
+                            <p> - {exercicio.series[0].titulo} de {exercicio.series[0].descricao}</p>
                             <h2>Força:</h2>
-                            <p>. {exercicio.series[1].titulo} de {exercicio.series[1].descricao}</p>
+                            <p>- {exercicio.series[1].titulo} de {exercicio.series[1].descricao}</p>
                         </div>
                     </div>
                 </div>

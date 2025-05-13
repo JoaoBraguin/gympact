@@ -2,10 +2,10 @@ import { FaStar } from 'react-icons/fa';
 import { FaRegStar } from 'react-icons/fa';
 import style from './style.module.css';
 
-export default function Exercicioinf({ titulo, imagem, descricao, inteira }) {
+export default function Exercicioinf({ id, titulo, imagem, descricao, inteira }) {
     return (
         <div className={style.item}>
-            <a href="/Detalhes">Ver mais</a>
+            <a href={`/Detalhes/${id}`}>Ver mais</a>
             <div className={style.exercicioinf}>
                 <div>
                     <h3>

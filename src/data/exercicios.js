@@ -2,7 +2,7 @@ import SupinoReto from '../images/exercicios/Supino-reto-1.png';
 import SupinoDeclinado from '../images/exercicios/Supino-declinado.png'
 import VoadorcomHalter from '../images/exercicios/Voador.png'
 import CrusifixonaPolía from '../images/exercicios/Crusifixo-na-polía-2.png'
-import Flexão from '../images/exercicios/Flexão.png'
+import Flexão from '../images/exercicios/Flexão.webp'
 import PuxadaFrente from '../images/exercicios/Puxada-frente-1.png'
 import PuxadaAtrás from '../images/exercicios/Puxada-atrás-1.png'
 import PuxadaNeutra from '../images/exercicios/Puxada-neutra-1.png'
@@ -42,9 +42,9 @@ import PanturrilhaemPé from '../images/exercicios/Panturrilha-em-pé-1.png'
 
 import SupinoRetocapa from '../images/exercicios/Supino-Reto-capa.gif'
 
-import SupinoDeclinadocapa from '../images/exercicios/SupinoDeclinado-capa.gif'
 
-import VoadorcomHaltercapa from '../images/exercicios/Voador-1-capa.png'
+
+import VoadorcomHaltercapa from '../images/exercicios/Voador-1-capa.jpeg'
 
 import CrusifixonaPolíacapa from '../images/exercicios/Crusifixo-na-Polía-capa.png'
 
@@ -68,7 +68,7 @@ import ElevaçãoLateralcapa from '../images/exercicios/Elevação-Lateral-capa.
 
 import DesenvolvimentocomHaltercapa from '../images/exercicios/Desinvolvimento-2-capa.png'
 
-import CrusifixoInversocapa from '../images/exercicios/Crusifixo-Inverso-capa.png'
+import CrusifixoInversocapa from '../images/exercicios/crusifixo-inclinado-capa.jpg'
 
 import RoscaDiretacapa from '../images/exercicios/Rosca-Direta-capa.png'
 
@@ -124,7 +124,7 @@ import PanturrilhaemPécapa from '../images/exercicios/Panturrilha-em-Pé-capa.p
 
 import SupinoRetoCapa from '../images/exercicios/Supino-Reto-capa.gif';
 
-import supinodeclinadocapa from '../images/exercicios/SupinoDeclinado-capa.gif';
+import supinodeclinadocapa from '../images/exercicios/Supino-Declinado-capa.gif';
 
 import Legpress from '../images/exercicios/Leg-Press-1-capa.png';
 

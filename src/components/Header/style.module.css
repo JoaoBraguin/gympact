@@ -2,7 +2,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     padding: 10px 32px;
     opacity: 100%;
     position: fixed;
@@ -17,11 +17,11 @@ header {
 
         @media (max-width:710px) {
             display: flex;
-        
+
         }
     }
 
-  
+
 
     .menu {
         display: flex;
@@ -35,11 +35,11 @@ header {
 
             &::after {
                 content: '';
-                background-color: white;
+                background-color: rgba(255, 0, 0, 0.466);
                 display: block;
-                height: 2px;
+                height: 3px;
                 width: 0;
-                transition: ease-in-out 0.5s;
+                transition: ease-in-out 0.6s;
             }
 
             &:hover::after {
