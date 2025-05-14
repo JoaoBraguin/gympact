@@ -144,7 +144,9 @@
 
 }
 .Panturrilha {
-    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 0 185px;
     padding: 20px 580px;
     grid-template-columns: 1fr ;

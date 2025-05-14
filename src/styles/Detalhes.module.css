@@ -72,6 +72,7 @@
     margin-left: 150px;
     border-radius: 20px;
     margin: 12px;
+    height: 800px;
 }
 
 .trabalhar h1,
@@ -151,6 +152,8 @@ p {
 
 .pai {
     display: flex;
+    align-items: center;
+    justify-content: center;
     padding-left: 55px;
     padding-top: 40px;
 }
